@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form action="/action_page.php">
+            <!-- Este fomulário tem a finalidade de demonstrar o uso de elementos de entrada, conceitos aprendidos em aprendidos em aula -->
+
+            <!-- input type="text" é um campo de texto com uma só linha; quebras de linha são automaticamente removidas do valor inserido. Exemplo: -->
+            Nome completo: <input type="text" name="nome"> <br><br>
+
+            <!-- input type="password" é um campo de texto com uma só linha cujo valor é obscurecido.Pode-se usar o comando maxlength para especificar o comprimento máximo do valor que pode ser inserido. Exemplo: -->
+            Senha: <input type="password" name="senha" maxlength="8"> <br><br>
+
+            <!-- input type="date" é um campo para inserir a data. A interface do usuário do controle varia geralmente de navegador para navegador. Exemplo: -->
+            Data: <input type="date" name="data"> <br><br>
+
+            <!-- input type="radio" trata-se de coleções de botões que descrevem um conjunto de opções relacionadas. Exmplo: -->
+            Sexo: <br>
+            <input type="radio" name="sexo" value="M"> Masculino
+            <input type="radio" name="sexo" value="F"> Feminino
+            <input type="radio" name="sexo" value="O"> Outro <br><br>
+
+            <!-- input type="checkbox" são caixas de seleção que permite a seleção de um ou mais valores para envio. Exemplo:-->
+            Em quais linguagens você já programou ? <br>
+            <input type="checkbox" name="HTML" value="HTML"> HTML
+            <input type="checkbox" name="2" value="CSS"> CSS
+            <input type="checkbox" name="tecnologia3" value="JavaScript"> JavaScript
+            <input type="checkbox" name="tecnologia4" value="PHP"> PHP
+            <input type="checkbox" name="tecnologia5" value="C#"> C
+            <input type="checkbox" name="tecnologia6" value="Python"> Python <br><br>
+
+            <!-- input type="range" permitem ao usuário especificar um valor numérico que não deve ser inferior a um determinado valor, e não mais do que um valor máximo especificado. Exemplo: -->
+            Range: <br>
+            <input type="range" min="5" max="10" step="any"> <br><br>
+
+            <!--input type="reset" são redefine todas as entradas no formulário para seus valores iniciais. Exemplo: -->
+            <input type="reset" vaue="reset"> <br><br>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
